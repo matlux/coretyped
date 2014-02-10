@@ -15,9 +15,11 @@
 (ann addit [(U Integer Double) Double -> Number])
 (defn addit [a b]
   (+ a b))
-;; (ann trytodiv [String -> Boolean])
-;; (defn trytodiv [a]
-;;   (div-by a 2) )
+
+;; this is where the compile time error is:
+(ann trytodiv [String -> Boolean])
+ (defn trytodiv [a]
+   (div-by a 2) )
 
 
 ;; (ann trytodiv2 [AnyInteger -> Boolean])
